@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "42709074165",
+    "firebase_url": "https://hubroulette.firebaseio.com",
+    "project_id": "hubroulette",
+    "storage_bucket": "hubroulette.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42709074165:android:74972d7975320fea",
+        "android_client_info": {
+          "package_name": "hr.msa.android.hubroulette"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42709074165-3anbprp4umjh6ku46ibqb8uf6tb05pkk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMg8fiG4vOJ_jvIsHRAmVp3S457_shck8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
