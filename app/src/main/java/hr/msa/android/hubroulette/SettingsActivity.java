@@ -173,6 +173,11 @@ public class SettingsActivity extends AppCompatActivity implements
                 }
 
                 Toast.makeText(SettingsActivity.this, "saved", Toast.LENGTH_SHORT).show();
+                if(mSelectedImageUri != null){
+                    uploadNewPhoto(mSelectedImageUri);
+                }else if(mSelectedImageBitmap  != null){
+                    uploadNewPhoto(mSelectedImageBitmap);
+                }
             }
         });
 
@@ -221,6 +226,7 @@ public class SettingsActivity extends AppCompatActivity implements
 
                     mName.setText(user.getName());
                     mPhone.setText(user.getPhone_number());
+                    ImageLoader.getInstance().displayImage(user.getProfile_image(), mProfileImage);
                 }
             }
 

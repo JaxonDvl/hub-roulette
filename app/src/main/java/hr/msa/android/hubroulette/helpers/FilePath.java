@@ -8,5 +8,5 @@ public class FilePath {
     public FilePath() {
     }
 
-    public String FIREBASE_IMAGE_STORAGE = "photos/users";
+    public String FIREBASE_IMAGE_STORAGE = "images/users";
 }
