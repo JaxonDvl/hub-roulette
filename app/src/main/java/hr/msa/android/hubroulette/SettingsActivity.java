@@ -456,7 +456,6 @@ public class SettingsActivity extends AppCompatActivity implements
     private void executeUploadTask(){
         showDialog();
         FilePath filePaths = new FilePath();
-//specify where the photo will be stored
         final StorageReference storageReference = FirebaseStorage.getInstance().getReference()
                 .child(filePaths.FIREBASE_IMAGE_STORAGE + "/" + FirebaseAuth.getInstance().getCurrentUser().getUid()
                         + "/profile_image"); //just replace the old image with the new one
@@ -467,13 +466,9 @@ public class SettingsActivity extends AppCompatActivity implements
             StorageMetadata metadata = new StorageMetadata.Builder()
                     .setContentType("image/jpg")
                     .setContentLanguage("en") //see nodes below
-                    /*
-                    Make sure to use proper language code ("English" will cause a crash)
-                    I actually submitted this as a bug to the Firebase github page so it might be
-                    fixed by the time you watch this video. You can check it out at https://github.com/firebase/quickstart-unity/issues/116
-                     */
-                    .setCustomMetadata("Mitch's special meta data", "JK nothing special here")
-                    .setCustomMetadata("location", "Iceland")
+
+                    .setCustomMetadata("Hello", "world")
+                    .setCustomMetadata("location", "Romania")
                     .build();
             //if the image size is valid then we can submit to database
             UploadTask uploadTask = null;

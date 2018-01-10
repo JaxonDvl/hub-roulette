@@ -87,6 +87,10 @@ public class SignedInActivity extends AppCompatActivity {
                 Intent intent = new Intent(SignedInActivity.this, SettingsActivity.class);
                 startActivity(intent);
                 return true;
+            case R.id.optionChat:
+                intent = new Intent(SignedInActivity.this, ChatActivity.class);
+                startActivity(intent);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
