@@ -13,4 +13,10 @@
     <color name="blue5">#007f85</color>
 
 
+
+    <color name="White">#fff</color>
+    <color name="Grey">#c3c3c3 </color>
+    <color name="DarkGrey">#737373 </color>
+
+
 </resources>
